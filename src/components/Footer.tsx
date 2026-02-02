@@ -2,8 +2,8 @@ import { motion } from "framer-motion";
 import { Github, Linkedin } from "lucide-react";
 
 const socialLinks = [
-  { icon: Github, href: "https://github.com/abhishekverma", label: "GitHub" },
-  { icon: Linkedin, href: "https://linkedin.com/in/abhishekverma", label: "LinkedIn" },
+  { icon: Github, href: "https://github.com/Abhi-247", label: "GitHub" },
+  { icon: Linkedin, href: "https://www.linkedin.com/in/abhishek-verma247-", label: "LinkedIn" },
 ];
 
 export const Footer = () => {
@@ -44,7 +44,7 @@ export const Footer = () => {
 
           {/* Copyright */}
           <p className="text-muted-foreground text-sm">
-            © 2024 Abhishek Verma. All rights reserved.
+            © 2025 Abhishek Verma. All rights reserved.
           </p>
         </div>
       </div>
