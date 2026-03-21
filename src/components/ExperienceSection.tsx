@@ -3,6 +3,19 @@ import { Briefcase, Calendar, MapPin } from "lucide-react";
 
 const experiences = [
   {
+    title: "Software Development Intern (Full-Stack Developer)",
+    company: "Frippy AI Technologies LLP",
+    location: "Remote",
+    period: "Jan 2026 – Present",
+    description: [
+      "Assisted in the design, development, and testing of full-stack web applications.",
+      "Collaborated in code reviews and participated in agile team meetings to improve code quality.",
+      "Documented features, bugs, and technical workflows for better project maintainability.",
+      "Worked on both frontend and backend tasks, contributing to scalable and efficient solutions.",
+    ],
+    current: true,
+  },
+  {
     title: "Web Development Team Member",
     company: "REC Sonbhadra",
     location: "Sonbhadra, UP",

@@ -18,9 +18,7 @@ export const Footer = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center">
-              <span className="text-primary-foreground font-display font-bold text-lg">A</span>
-            </div>
+            <img src="/favicon.png" alt="Logo" className="w-10 h-10 rounded-full object-cover shadow-sm border border-primary/20" />
             <span className="font-display font-bold text-xl text-foreground">Abhishek</span>
           </motion.a>
 
