@@ -6,7 +6,7 @@ const experiences = [
     title: "Software Development Intern (Full-Stack Developer)",
     company: "Frippy AI Technologies LLP",
     location: "Remote",
-    period: "Jan 2026 – Present",
+    period: "Jan 2026 – March 2026",
     description: [
       "Assisted in the design, development, and testing of full-stack web applications.",
       "Collaborated in code reviews and participated in agile team meetings to improve code quality.",
