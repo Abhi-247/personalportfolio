@@ -5,12 +5,12 @@ import alumni from "../assets/images/alumni.png";
 import disaster from "../assets/images/disaster.png";
 import todo from "../assets/images/todo.png";
 
-
 const projects = [
   {
     title: "IEEE CNC 2025 Conference Website",
     category: "React.js, Tailwind CSS",
-    description: "Official conference website with responsive components for homepage, committee info, event schedules, and registration.",
+    description:
+      "Official conference website with responsive components for homepage, committee info, event schedules, and registration.",
     image: ieee,
     liveLink: "https://cncrecs.in",
     githubLink: "https://github.com/Abhi-247",
@@ -18,15 +18,17 @@ const projects = [
   {
     title: "Notes App",
     category: "Android, React Native",
-    description: "A simple notes application with CRUD operations and local storage persistence.",
-    image: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600&h=400&fit=crop",
+    description:
+      "A simple notes application with CRUD operations and local storage persistence.",
+    image: "/notesapp.png",
     liveLink: "#",
     githubLink: "https://github.com/Abhi-247/NotesApp",
   },
   {
     title: "Alumni Portal for College",
     category: "MERN Stack",
-    description: "Full-stack alumni portal connecting students and alumni for mentorship, networking, and job opportunities with recruiter section.",
+    description:
+      "Full-stack alumni portal connecting students and alumni for mentorship, networking, and job opportunities with recruiter section.",
     image: alumni,
     liveLink: "https://alumni-portal-coral.vercel.app",
     githubLink: "https://github.com/Abhi-247/Alumni-portal",
@@ -34,7 +36,8 @@ const projects = [
   {
     title: "Disaster Management System",
     category: "html, CSS, JavaScript, Node.js",
-    description: "Web application to report and manage disaster incidents with real-time updates and resource allocation.",
+    description:
+      "Web application to report and manage disaster incidents with real-time updates and resource allocation.",
     image: disaster,
     liveLink: "https://disaster-management-system-abhi.vercel.app/",
     githubLink: "https://github.com/Abhi-247/Disaster-Management-System",
@@ -42,15 +45,18 @@ const projects = [
   {
     title: "Currency Converter App",
     category: "html, CSS, JavaScript, Node.js",
-    description: "Web application to convert currencies with real-time exchange rates and responsive design.",
-    image: "https://www.sourcecodester.com/sites/default/files/images/rems/rtcc1.png",
+    description:
+      "Web application to convert currencies with real-time exchange rates and responsive design.",
+    image:
+      "https://www.sourcecodester.com/sites/default/files/images/rems/rtcc1.png",
     liveLink: "#",
     githubLink: "https://github.com/Abhi-247/Currency-Converter",
   },
   {
     title: "Todo List App",
     category: "html, CSS, JavaScript, Node.js",
-    description: "Web application to manage tasks with add, edit, delete, and mark as complete functionality.",
+    description:
+      "Web application to manage tasks with add, edit, delete, and mark as complete functionality.",
     image: todo,
     liveLink: "#",
     githubLink: "https://github.com/Abhi-247/Todo-List",
@@ -95,7 +101,7 @@ export const PortfolioSection = () => {
                   className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-110"
                 />
               </div>
-              
+
               {/* Content */}
               <div className="p-5">
                 <span className="text-accent text-xs font-semibold uppercase tracking-wider">
@@ -107,21 +113,21 @@ export const PortfolioSection = () => {
                 <p className="text-muted-foreground text-sm mt-1.5 line-clamp-2">
                   {project.description}
                 </p>
-                
+
                 {/* Links */}
                 <div className="flex items-center gap-4 mt-3">
-                  <a 
-                    href={project.liveLink} 
-                    target="_blank" 
+                  <a
+                    href={project.liveLink}
+                    target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-1.5 text-primary hover:text-accent transition-colors font-medium text-sm"
                   >
                     <ExternalLink className="w-4 h-4" />
                     Live
                   </a>
-                  <a 
-                    href={project.githubLink} 
-                    target="_blank" 
+                  <a
+                    href={project.githubLink}
+                    target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-1.5 text-primary hover:text-accent transition-colors font-medium text-sm"
                   >

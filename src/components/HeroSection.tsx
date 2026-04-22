@@ -1,24 +1,48 @@
 import { motion } from "framer-motion";
 import { Download, MessageCircle, Code2, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { 
-  FloatingStar, 
-  CircleDecoration 
+import {
+  FloatingStar,
+  CircleDecoration,
 } from "@/components/DecorativeElements";
 
 export const HeroSection = () => {
   const whatsappNumber = "916386840054";
-  const whatsappMessage = encodeURIComponent("Hi Abhishek! I visited your portfolio and would like to discuss a project with you.");
+  const whatsappMessage = encodeURIComponent(
+    "Hi Abhishek! I visited your portfolio and would like to discuss a project with you.",
+  );
 
   return (
-    <section id="home" className="min-h-[90vh] pt-20 pb-8 relative overflow-hidden flex items-center">
+    <section
+      id="home"
+      className="min-h-[90vh] pt-20 pb-8 relative overflow-hidden flex items-center"
+    >
       {/* Decorative elements */}
-      <FloatingStar className="absolute top-32 right-1/4 w-4 h-4 text-accent" delay={0.5} />
-      <FloatingStar className="absolute top-48 right-20 w-3 h-3 text-primary" delay={0.7} />
-      <FloatingStar className="absolute bottom-32 left-20 w-5 h-5 text-accent" delay={0.9} />
-      <CircleDecoration className="absolute top-1/2 left-[15%] w-3 h-3 text-muted-foreground/30" delay={1.1} />
-      <CircleDecoration className="absolute top-[40%] right-[45%] w-2 h-2 text-primary/50" delay={1.3} filled />
-      <FloatingStar className="absolute bottom-48 right-1/3 w-4 h-4 text-primary/70" delay={1.5} />
+      <FloatingStar
+        className="absolute top-32 right-1/4 w-4 h-4 text-accent"
+        delay={0.5}
+      />
+      <FloatingStar
+        className="absolute top-48 right-20 w-3 h-3 text-primary"
+        delay={0.7}
+      />
+      <FloatingStar
+        className="absolute bottom-32 left-20 w-5 h-5 text-accent"
+        delay={0.9}
+      />
+      <CircleDecoration
+        className="absolute top-1/2 left-[15%] w-3 h-3 text-muted-foreground/30"
+        delay={1.1}
+      />
+      <CircleDecoration
+        className="absolute top-[40%] right-[45%] w-2 h-2 text-primary/50"
+        delay={1.3}
+        filled
+      />
+      <FloatingStar
+        className="absolute bottom-48 right-1/3 w-4 h-4 text-primary/70"
+        delay={1.5}
+      />
 
       <div className="container mx-auto px-6">
         <div className="max-w-5xl mx-auto text-center space-y-6">
@@ -30,7 +54,9 @@ export const HeroSection = () => {
             className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20"
           >
             <Sparkles className="w-4 h-4 text-accent" />
-            <span className="text-sm font-medium text-primary">Available for Opportunities</span>
+            <span className="text-sm font-medium text-primary">
+              Available for Opportunities
+            </span>
           </motion.div>
 
           {/* Name */}
@@ -65,9 +91,11 @@ export const HeroSection = () => {
             transition={{ duration: 0.6, delay: 0.3 }}
           >
             <p className="text-muted-foreground leading-relaxed">
-              B.Tech CSE student at <span className="text-primary font-semibold">REC Sonbhadra</span> with CGPA 8.26. 
-              Building scalable full-stack applications with React.js, Node.js, and MongoDB. 
-              Passionate about clean code and user-centric design.
+              B.Tech CSE student at{" "}
+              <span className="text-primary font-semibold">REC Sonbhadra</span>{" "}
+              with CGPA 8.26. Building scalable full-stack applications with
+              React.js, Node.js, and MongoDB. Passionate about clean code and
+              user-centric design.
             </p>
           </motion.div>
 
@@ -79,16 +107,23 @@ export const HeroSection = () => {
             transition={{ duration: 0.6, delay: 0.4 }}
           >
             <Button variant="hero" asChild>
-              <a href="/Abhishek%20resume.pdf" download="Abhishek_Resume.pdf">
+              <a
+                href="/Abhishek_Resume_5.pdf"
+                download="Abhishek_Resume.pdf"
+              >
                 <Download className="w-5 h-5" />
                 Download CV
               </a>
             </Button>
-            <Button variant="outline" className="rounded-full px-8 py-3 text-base" asChild>
+            <Button
+              variant="outline"
+              className="rounded-full px-8 py-3 text-base"
+              asChild
+            >
               <a href="#portfolio">View Projects</a>
             </Button>
             <Button variant="accent" asChild>
-              <a 
+              <a
                 href={`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`}
                 target="_blank"
                 rel="noopener noreferrer"

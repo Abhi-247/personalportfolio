@@ -3,6 +3,18 @@ import { Briefcase, Calendar, MapPin } from "lucide-react";
 
 const experiences = [
   {
+    title: "Software Development Intern",
+    company: "Winkget Express Pvt Ltd",
+    location: "Hybrid",
+    period: "April 2026 – Present",
+    description: [
+      "Contributing to software and app development, testing, and debugging.",
+      "Working on real-time projects with a focus on clean and efficient code.",
+      "Collaborating in team discussions and applying best coding practices",
+    ],
+    current: true,
+  },
+  {
     title: "Software Development Intern (Full-Stack Developer)",
     company: "Frippy AI Technologies LLP",
     location: "Remote",
@@ -13,7 +25,7 @@ const experiences = [
       "Documented features, bugs, and technical workflows for better project maintainability.",
       "Worked on both frontend and backend tasks, contributing to scalable and efficient solutions.",
     ],
-    current: true,
+    current: false,
   },
   {
     title: "Web Development Team Member",
@@ -74,11 +86,13 @@ export const ExperienceSection = () => {
             >
               {/* Timeline line */}
               <div className="absolute left-0 top-0 bottom-0 w-px bg-border" />
-              
+
               {/* Timeline dot */}
-              <div className={`absolute left-0 top-2 w-3 h-3 rounded-full -translate-x-1/2 ${
-                exp.current ? 'bg-accent glow-accent' : 'bg-primary'
-              }`} />
+              <div
+                className={`absolute left-0 top-2 w-3 h-3 rounded-full -translate-x-1/2 ${
+                  exp.current ? "bg-accent glow-accent" : "bg-primary"
+                }`}
+              />
 
               {/* Content Card */}
               <div className="bg-background rounded-2xl p-6 border border-border shadow-lg hover:border-primary/50 transition-colors">
@@ -89,10 +103,12 @@ export const ExperienceSection = () => {
                     </h3>
                     <div className="flex items-center gap-2 mt-1">
                       <Briefcase className="w-4 h-4 text-primary" />
-                      <span className="text-primary font-semibold">{exp.company}</span>
+                      <span className="text-primary font-semibold">
+                        {exp.company}
+                      </span>
                     </div>
                   </div>
-                  
+
                   <div className="flex flex-col items-end gap-1">
                     <div className="flex items-center gap-2 text-muted-foreground text-sm">
                       <Calendar className="w-4 h-4" />
@@ -107,7 +123,10 @@ export const ExperienceSection = () => {
 
                 <ul className="space-y-2">
                   {exp.description.map((item, i) => (
-                    <li key={i} className="flex items-start gap-3 text-muted-foreground">
+                    <li
+                      key={i}
+                      className="flex items-start gap-3 text-muted-foreground"
+                    >
                       <span className="w-1.5 h-1.5 rounded-full bg-accent mt-2 flex-shrink-0" />
                       <span>{item}</span>
                     </li>
