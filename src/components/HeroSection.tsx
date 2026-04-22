@@ -107,10 +107,7 @@ export const HeroSection = () => {
             transition={{ duration: 0.6, delay: 0.4 }}
           >
             <Button variant="hero" asChild>
-              <a
-                href="/Abhishek_Resume_5.pdf"
-                download="Abhishek_Resume.pdf"
-              >
+              <a href="/Abhishek_Resume_5.pdf" download="Abhishek_Resume.pdf">
                 <Download className="w-5 h-5" />
                 Download CV
               </a>
